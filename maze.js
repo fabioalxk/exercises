@@ -13,6 +13,8 @@ const maze = [
   ["a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a"],
 ];
 
+findPath([{ row: 0, col: 1 }]);
+
 function findPath(path) {
   const { row, col } = path[path.length - 1];
 
@@ -189,5 +191,3 @@ function printPath(path) {
   console.log(pathStr);
   return pathStr;
 }
-
-findPath([{ row: 0, col: 1 }]);
