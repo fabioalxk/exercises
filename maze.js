@@ -54,11 +54,7 @@ function move({ row: nextRow, col: nextCol }, path) {
   Nodes that are already visited, can not be visited again.
 */
 function pathAlreadyExists({ nextRow, nextCol }, path) {
-  if (path.some((tuple) => tuple.row === nextRow && tuple.col === nextCol)) {
-    return true;
-  } else {
-    return false;
-  }
+  return path.some((tuple) => tuple.row === nextRow && tuple.col === nextCol);
 }
 
 /*
